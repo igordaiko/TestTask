@@ -1,0 +1,280 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  background-image: url(https://signupprod.msocdn.com/16.00.1480.009/ru-RU/images/Backgrounds/dynamics_ax_background.png);
+
+}
+h1 {
+    font-family: "SegoeUI-Light-final","Segoe UI Light","Segoe UI",Segoe,Tahoma,Helvetica,Arial,Sans-Serif;
+    color: #333;
+    line-height: 40px;
+        font-size: 40px;
+}
+.resp-content-box {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding: 130px 20px 160px 20px;
+}
+.resp-content-contrastbg {
+    width: 620px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: rgba(255,255,255,.95);
+}
+
+.field {
+    min-width: 540px!important;
+    width: 100%!important;
+}
+.field {
+    margin: 33px 0 0 0;
+    width: 550px;
+}
+.field {
+    margin-top: 3px;
+}
+select {
+    width: auto;
+    border: 1px solid #a3aeaf;
+    border-image: none;
+        padding: 7px;
+    font-size: 17px;
+    margin-top: 3px;
+    width: 100%!important;
+        margin: 33px 0 0 0;
+    width: 550px;
+
+}
+.BOX-MainBodyText {
+    font-weight: normal;
+    font-family: "Segoe UI",Segoe,Tahoma,Helvetica,Arial,Sans-Serif,SegoeUI-Regular-final;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: .01em;
+}
+ .ms-bcl-nt, .ms-bcl-nt-h:hover {
+    border-color: #a6a6a6;
+}
+.ms-bgc-w, .ms-bgc-w-h:hover {
+    background-color: #fff;
+}
+div.AlertMessage {
+    max-width: none;
+    margin: 6px 0;
+    border: 1px solid;
+    display: inline-block;
+}
+div.AlertMessage>table>tbody>tr>td.AlertMessage-ImageTd {
+    padding-top: .45em;
+    text-align: center;
+    vertical-align: top;
+    width: 28px;
+}
+div.AlertMessage>table>tbody>tr>td.BOX-MainBodyText {
+    padding: 4px 6px;
+    padding-left: 0;
+    vertical-align: middle;
+}
+.o365-theme-base, .ms-fcl-tp, .o365-theme-base .ms-fcl-tp-h:hover {
+    color: #000;
+}
+
+a {
+    color: #0072c6;
+    text-decoration: none!important;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.text {
+    width: 281px;
+}
+.text {
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+    font-family: "SegoeUI-SemiLight-final","Segoe UI",Segoe,Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    border: 1px solid #c8c8c8;
+    padding: 0 10px;
+}
+.floatleft {
+    float: left;
+}
+.spaceforname {
+    width: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.field-validation-area {
+    min-height: 15px;
+    clear: both;
+}
+.ValidationCalloutForeground {
+    color: #e70000;
+}
+.text.large {
+    width: 582px;
+}
+input[type="text"], input[type="password"], input[type="file"], textarea {
+    border: 1px solid #a3aeaf;
+    margin: 2px 0;
+    min-height: 21px;
+    padding-left: 8px;
+    line-height: normal;
+
+}
+
+.shortyDropDown {
+    width: 250px!important;
+    margin:0;
+}
+.mpl-button-rectangle-DynamicsOps {
+    margin: 2px;
+    background-color: #00b7c3;
+    border-color: #00b7c3;
+    text-align: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Segoe UI,Segoe WP,Segoe UI Regular,Helvetica Neue,Helvetica,Tahoma,Arial Unicode MS,Sans-serif!important;
+    font-size: 18px;
+    line-height: 27px;
+    color: #002050!important;
+        font-weight: 400;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: inherit;
+}
+/*SecondPage*/
+.field.info.large {
+    padding-bottom: 20px;
+}
+h2 {
+    font-family: "SegoeUI-Light-final","Segoe UI Light","Segoe UI",Segoe,Tahoma,Helvetica,Arial,Sans-Serif;
+    font-size: 21px;
+    color: #333;
+    line-height: 30px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+h2 {
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI Light","Segoe UI",Segoe,Tahoma,Helvetica,Arial,Sans-Serif,SegoeUI-Light-final;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 0 0;
+}
+.UserId {
+    width: 200px;
+    text-align: left;
+}
+.floatleftNoMirror {
+    float: left;
+}
+.spaceforat {
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+.DomainName {
+    width: 98%;
+    padding-right: 135px;
+    text-align: left;
+}
+.onmicrosoft {
+    position: absolute;
+    top: 10px;
+    Right: 42px;
+    font-size: 17px;
+    color: #2a8dd4;
+}
+.mpl-button-next {
+    font-family: "SegoeUI-SemiLight-final","Segoe UI",Segoe,Tahoma,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: -4px;
+}
+
+.preview-container {
+    background: rgba(211,211,211,.3);
+    width: 580px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    min-width: 390px!important;
+    text-align: center;
+    font-family: "SegoeUI-Light-final","Segoe UI Light","Segoe UI",Segoe,Tahoma,Helvetica,Arial,Sans-Serif;
+    font-size: 16px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+
+ .field-validation-error
+        {
+            color: #ff0000;
+        }
+        
+        .field-validation-valid
+        {
+            display: none;
+        }
+        
+        .input-validation-error
+        {
+            border: 1px solid #ff0000 !important;
+            background-color: #ffeeee !important;
+        }
+        
+        .validation-summary-errors
+        {
+            font-weight: bold !important;
+            color: #ff0000 !important;
+        }
+        
+        .validation-summary-valid
+        {
+            display: none;
+        }

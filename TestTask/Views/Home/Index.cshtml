@@ -1,0 +1,97 @@
+﻿@model TestTask.Models.UserModel
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+    <div class="mpl-title-box gemini" id="PageTitleBox" aria-live="assertive" aria-atomic="false">
+        <h1 class="mpl-title-box-text ms-fcl-nd gemini" id="WizardPageTitle" tabindex="0" role="heading">Добро пожаловать! Давайте познакомимся</h1>
+    </div>
+    <div id="signup_form_container">
+        @using (Html.BeginForm())
+        {
+
+            <p>
+                @Html.DropDownList("Country")
+                @Html.ValidationMessageFor(x => x.Country)
+            </p>
+            <fieldset class="field">
+
+                <div class="AlertMessage ms-bgc-w ms-bcl-nt" id="RussiaDataPrivacyNotice" role="alert">
+                    <table cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td class="AlertMessage-ImageTd">
+                                    <img class="" id="RussiaDataPrivacyNotice_AlertIcon" alt="Предупреждение" src="https://signupprod.msocdn.com/16.00.1480.009/ru-RU/Images/Alert_Med_default_16x16_metro.png">
+                                </td>
+                                <td class="AlertMessage-Text BOX-MainBodyText ms-fcl-np" id="RussiaDataPrivacyNotice_Content">
+                                    <div class="large" style="528px">
+
+
+
+                                        <span id="RussiaDataPrivacyNotice_before">Применяются требования к локальным данным. </span><a data-client-click="" id="RussiaDataPrivacyNotice" class="ms-fcl-tp HyperLink" href="https://g.microsoftonline.com/0BX20ru/1474" target="_blank">Просмотрите возможные варианты приобретения и использования Microsoft Online Services.</a><span id="RussiaDataPrivacyNotice_after"></span>
+
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </fieldset>
+            <fieldset class="field name-field">
+                <fieldset class="floatleft">
+                    @Html.TextBoxFor(x => x.FName, new { placeholder = "Имя", @class = "first-name text" })
+                    <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                        @Html.ValidationMessageFor(x => x.FName)
+                    </div>
+                </fieldset>
+                <fieldset class="floatleft">
+                    <div class="spaceforname">&nbsp;</div>
+               </fieldset>
+                <fieldset>
+                    @Html.TextBoxFor(x => x.SName, new { placeholder = "Фамилия", @class = "first-name text" })
+                    <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                        @Html.ValidationMessageFor(x => x.SName)
+                    </div>                
+                </fieldset>
+            </fieldset>
+                <fieldset class="field">
+                    @Html.TextBoxFor(x => x.EMail, new { placeholder = "Рабочий адрес электронной почты", @class = "large text" })
+                    <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                        @Html.ValidationMessageFor(x => x.EMail)
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                    @Html.TextBoxFor(x => x.Phone, new { placeholder = "Рабочий номер телефона", @class = "large text" })
+                    <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                        @Html.ValidationMessageFor(x => x.Phone)
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                    @Html.TextBoxFor(x => x.EnterpriseName, new { placeholder = "Название организации", @class = "large text" })
+                    <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                        @Html.ValidationMessageFor(x => x.EnterpriseName)
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                    @Html.DropDownList("Language", null, new { @class = "shortyDropDown" })
+                    <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                        @Html.ValidationMessageFor(x => x.Language)
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                    @Html.DropDownList("CountOfUsers",null, "Размер организации", new { @class = "shortyDropDown" })
+                    <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                        @Html.ValidationMessageFor(x => x.CountOfUsers)
+                    </div>
+                </fieldset>
+                <input type="hidden" name="Login" value="username" />
+                <input type="hidden" name="CompanyName" value="CompName" />
+                <input type="hidden" name="Password" value="pass" />
+                <input type="hidden" name="ConfirmPassword" value="pass" />
+                <input type="submit" class="ms-fcl-tp HyperLink mpl-button-next mpl-button-rectangle-DynamicsOps gemini" value="Еще одно действие" />
+        }
+</div>
+

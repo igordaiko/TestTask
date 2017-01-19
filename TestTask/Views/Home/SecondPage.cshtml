@@ -1,0 +1,87 @@
+﻿@model TestTask.Models.UserModel
+
+@{
+    ViewBag.Title = "SecondPage";
+    Model.CompanyName = "";
+}
+<h1 class="mpl-title-box-text ms-fcl-nd gemini">Создание ИД пользователя</h1>
+<div class="signup_form_container">
+@using (Html.BeginForm("SecondPage", "Home"))
+{
+    <h2 class="field info large black">Для входа в учетную запись требуются идентификатор пользователя и пароль.</h2>
+    <fieldset class="field name-field">
+        <fieldset class="floatleftNoMirror">
+            <input class="UserId text" data-val="true" data-val-required="Эти сведения обязательны" id="Login" name="Login" placeholder="username" type="text" value="">            <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                @Html.ValidationMessageFor(x => x.Login)
+            </div>
+        </fieldset>
+        <fieldset class="floatleftNoMirror">
+            <div class="spaceforat">@@</div>
+        </fieldset>
+        <fieldset>
+            <input class="DomainName text"  data-val="true" data-val-required="Эти сведения обязательны" id="CompanyName" placeholder="ВашаКомпания" name="CompanyName" type="text" value="" />
+            <label class="onmicrosoft" for="CompanyName" style="right:15px">.onmicrosoft.com</label>
+            <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                @Html.ValidationMessageFor(x => x.CompanyName)
+            </div>
+        </fieldset>
+    </fieldset>
+
+        <fieldset class="field" id="new_email">
+            <div class="preview-container text large">
+                <span class="userId" id="domainInfoUserIdPart"><i>username</i></span>
+                @@
+                <span class="domain" id="domainInfoDomainPart">ВашаКомпания</span>
+                <span id="newDomainEmailLabelPreview">.onmicrosoft.com</span>
+            </div>
+        </fieldset>
+        <fieldset class="field password-field">
+            @Html.PasswordFor(x=>x.Password, new { placeholder = "Создайте пароль", @class = "large text"})
+            <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                @Html.ValidationMessageFor(x => x.Password)
+            </div>
+        </fieldset>
+        <fieldset class="field password-field">
+            @Html.PasswordFor(x => x.ConfirmPassword, new { placeholder = "Подтвердите пароль", @class = "large text" })
+            <div class="field-validation-area ValidationCalloutForeground" role="alert" id="FirstNameCallout">
+                @Html.ValidationMessageFor(x => x.ConfirmPassword)
+            </div>
+        </fieldset>
+
+        @Html.ValidationSummary();
+        @Html.HiddenFor(x => x.CountOfUsers);
+        @Html.HiddenFor(x => x.Country);
+        @Html.HiddenFor(x => x.EMail);
+        @Html.HiddenFor(x => x.EnterpriseName);
+        @Html.HiddenFor(x => x.FName);
+        @Html.HiddenFor(x => x.Language);
+        @Html.HiddenFor(x => x.Phone);
+        @Html.HiddenFor(x => x.SName);
+    <fieldset class="field">
+        <div class="legal-panel">
+            Нажав кнопку <b>Создать учетную запись</b> вы примете наши условия и настройки общения по умолчанию.
+            <p></p>
+            <p> Нажав кнопку Создать учетную запись, вы подтверждаете, что ознакомились с соглашением об использовании пробной версии. Если вы регистрируетесь от имени организации, нажав Создать учетную запись, вы подтверждаете, что наделены полномочиями связывать организацию обязательствами по выполнению условий этого соглашения. Как представитель организации вы этим подтверждаете, что организация будет выполнять условия, указанные в этом соглашении и на веб-сайтах, на которые оно ссылается.</p>
+        </div>
+        
+    </fieldset>
+        <input type="submit" class="ms-fcl-tp HyperLink mpl-button-next mpl-button-rectangle-DynamicsOps gemini" value="Создать учетную запись"/>
+
+}
+
+</div>
+
+<script>
+    var login = "userName";
+    var comp_name = "ВашаКомпания"
+    $("#Login").keyup(function () {
+
+        login = $(this).val();
+        $("#domainInfoUserIdPart").text(login);
+    })
+    $("#CompanyName").keyup(function () {
+        comp_name = $(this).val();
+        $("#domainInfoDomainPart").text(comp_name);
+
+    })
+</script>
